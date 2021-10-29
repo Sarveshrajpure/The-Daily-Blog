@@ -1,0 +1,40 @@
+.blogcard-wrapper {
+  margin: 0.5rem;
+}
+.blogcard-container {
+  height: 150px;
+  width: 135px;
+  padding: 1rem;
+  text-overflow: ellipsis;
+  background-color: #fff;
+}
+.blogcard-container .title {
+  font-size: 2rem;
+  padding: 0rem 0 0rem 0;
+}
+
+.blogcard-container .summary {
+  font-size: 1rem;
+  width: 140px;
+  height: 80px;
+  word-wrap: break-word;
+  padding: 0.5rem 0 0.5rem 0;
+  line-break: auto;
+}
+
+@media screen and (max-width: 1370px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 840px) {
+}
+@media screen and (max-width: 770px) {
+}
+@media screen and (max-width: 420px) {
+}
+@media screen and (max-width: 380px) {
+}
+@media screen and (max-width: 360px) {
+}
+@media screen and (max-width: 320px) {
+}

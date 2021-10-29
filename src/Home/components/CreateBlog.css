@@ -1,0 +1,334 @@
+.create-blog-wrapper {
+}
+.create-blog-title {
+  padding: 3rem 0 0rem 0;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #eef0f2;
+  text-align: center;
+  background-color: #011638;
+}
+
+.create-blog-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #011638;
+}
+.formError {
+  position: relative;
+  left: 5%;
+  font-size: 0.8rem;
+  color: red;
+}
+.label-input-wrapper {
+  display: flex;
+}
+.label-input-wrapper .label-title {
+  margin: 2rem 4rem 0 1.6rem;
+  color: #eef0f2;
+}
+.label-input-wrapper .label-content {
+  margin: 2rem 4rem 0 0;
+  color: #eef0f2;
+}
+.label-input-wrapper .inputField {
+  width: 20rem;
+  margin: 2rem 0 0 0;
+  padding: 0.8rem;
+  border: 3px solid #011638;
+  outline: none;
+  border-radius: 0.2rem;
+  font-family: "Overpass", sans-serif;
+  transition: border 300ms ease-in;
+}
+.label-input-wrapper .inputField:focus {
+  border: 3px solid #eec643;
+}
+
+.publish-btn {
+  position: relative;
+  left: 5%;
+  width: max-content;
+  color: #011638;
+  margin: 2rem 0 1rem 0;
+  padding: 0.9rem 2rem 0.8rem 2rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: #eef0f2;
+  transition: all 300ms ease-in;
+}
+.publish-btn:hover {
+  background-color: #eec643;
+  color: #011638;
+}
+.new-blog-container {
+  position: relative;
+  left: 3%;
+  width: 92%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 1rem 0 0 0;
+}
+.new-blog-container::-webkit-scrollbar {
+  height: 0rem;
+}
+.scroll-Btn-left {
+  background-color: #eec643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 8rem;
+  left: 2.5rem;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.6;
+  user-select: none;
+  transition: all 300ms ease-in;
+}
+.scroll-Btn-left:hover {
+  opacity: 1;
+}
+.scroll-Btn-left .fa-chevron-left {
+  margin: 0;
+}
+
+.scroll-Btn-right {
+  background-color: #eec643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -7rem;
+  left: 90rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.6;
+  user-select: none;
+  transition: all 300ms ease-in;
+}
+.scroll-Btn-right:hover {
+  opacity: 1;
+}
+.scroll-Btn-right .fa-chevron-left {
+  margin: 0;
+}
+@media screen and (max-width: 1370px) {
+  .scroll-Btn-right {
+    top: -7.5rem;
+    left: 65.5rem;
+  }
+  .scroll-Btn-left {
+    top: 8.4rem;
+    left: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .scroll-Btn-right {
+    top: -7.5rem;
+    left: 60rem;
+  }
+  .scroll-Btn-left {
+    top: 8.4rem;
+    left: 2rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .scroll-Btn-right {
+    top: -7rem;
+    left: 48rem;
+  }
+  .scroll-Btn-left {
+    top: 9rem;
+    left: 1.5rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .create-blog-form {
+    left: 10%;
+  }
+  .label-input-wrapper .label-title {
+    margin: 2rem 2.8rem 0 0;
+  }
+  .label-input-wrapper .label-content {
+    margin: 2rem 1rem 0 0;
+  }
+  .label-input-wrapper .inputField {
+    width: 16rem;
+  }
+  .publish-btn {
+    left: 10%;
+  }
+  .new-blog-container {
+    position: relative;
+    left: 1%;
+    width: 92%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .scroll-Btn-right {
+    top: -7.5rem;
+    left: 43.5rem;
+  }
+  .scroll-Btn-left {
+    top: 8.4rem;
+    left: 0.3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .scroll-Btn-right {
+    top: -7rem;
+    left: 23.5rem;
+  }
+  .scroll-Btn-left {
+    top: 8.8rem;
+    left: 0.3rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .create-blog-form {
+    left: 10%;
+  }
+  .label-input-wrapper .label-title {
+    margin: 2rem 2.8rem 0 0;
+  }
+  .label-input-wrapper .label-content {
+    margin: 2rem 1rem 0 0;
+  }
+  .label-input-wrapper .inputField {
+    width: 15rem;
+  }
+  .publish-btn {
+    left: 6%;
+  }
+  .new-blog-container {
+    position: relative;
+    left: 1%;
+    width: 92%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .scroll-Btn-right {
+    top: -7rem;
+    left: 21.5rem;
+  }
+  .scroll-Btn-left {
+    top: 8.8rem;
+    left: 0.3rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .scroll-Btn-right {
+    top: -7.5rem;
+    left: 20rem;
+  }
+  .scroll-Btn-left {
+    top: 8.4rem;
+    left: 0.3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .create-blog-title {
+    font-size: 2.8rem;
+  }
+  .create-blog-form {
+    left: 10%;
+  }
+  .label-input-wrapper .label-title {
+    margin: 2rem 2.8rem 0 0;
+  }
+  .label-input-wrapper .label-content {
+    margin: 2rem 1rem 0 0;
+  }
+  .label-input-wrapper .inputField {
+    width: 13rem;
+  }
+  .publish-btn {
+    left: 6%;
+  }
+  .new-blog-container {
+    position: relative;
+    left: 1%;
+    width: 92%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .scroll-Btn-right {
+    top: -7.5rem;
+    left: 19.7rem;
+  }
+  .scroll-Btn-left {
+    top: 8.4rem;
+    left: 0.3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .create-blog-title {
+    font-size: 2.8rem;
+  }
+  .create-blog-form {
+    left: 10%;
+  }
+  .label-input-wrapper .label-title {
+    margin: 2rem 2.8rem 0 0;
+  }
+  .label-input-wrapper .label-content {
+    margin: 2rem 1rem 0 0;
+  }
+  .label-input-wrapper .inputField {
+    width: 10rem;
+  }
+  .publish-btn {
+    left: 6%;
+  }
+  .new-blog-container {
+    position: relative;
+    left: 1%;
+    width: 92%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .scroll-Btn-right {
+    top: -7.5rem;
+    left: 17rem;
+  }
+  .scroll-Btn-left {
+    top: 8.4rem;
+    left: 0.3rem;
+  }
+}

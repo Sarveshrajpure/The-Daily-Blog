@@ -1,0 +1,203 @@
+.login-form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  height: 60vh;
+  display: flex;
+}
+.login-form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.login-form-welcome-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  height: 99%;
+  background-color: #011638;
+  color: #eef0f2;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.login-form-welcome-message-wrapper .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.login-form-welcome-message-wrapper .title .title-exclamation {
+  font-size: 3rem;
+  color: #eec643;
+}
+.login-form-welcome-message-wrapper .description {
+  text-align: center;
+  padding: 0rem 0.5rem 0 0.5rem;
+}
+.login-form-fields-wrapper {
+  width: 50%;
+  width: 49%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.login-form-fields-wrapper .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 5rem 0 0 0;
+  color: #011638;
+  border-bottom: 3px solid #eec643;
+}
+.login-form-fields-wrapper .errorDisplay {
+  font-size: 0.8rem;
+  color: red;
+}
+.userName-inputfield {
+  width: 70%;
+  padding: 0.8rem;
+  margin: 2rem 0 0.5rem 0;
+  border: 2px solid #011638;
+  outline: none;
+  border-radius: 0.2rem;
+  font-family: "Overpass", sans-serif;
+  transition: border 300ms ease-in;
+}
+.userName-inputfield:focus {
+  border: 2px solid #eec643;
+}
+.password-inputfield {
+  width: 70%;
+  padding: 1rem 0.8rem 0.7rem 0.8rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 2px solid #011638;
+  outline: none;
+  border-radius: 0.2rem;
+  font-family: "Overpass", sans-serif;
+  transition: border 300ms ease-in;
+}
+.password-inputfield:focus {
+  border: 2px solid #eec643;
+}
+.LoginBtn {
+  text-decoration: none;
+  margin: 1rem 0 1rem 0;
+  padding: 0.9rem 2rem 0.8rem 2rem;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: #eef0f2;
+  transition: all 300ms ease-in;
+}
+.LoginBtn:hover {
+  background-color: #eec643;
+  color: #011638;
+}
+
+@media screen and (max-width: 1370px) {
+}
+@media screen and (max-width: 1024px) {
+  .login-form-content {
+    flex-direction: row;
+  }
+  .login-form-welcome-message {
+    width: 100%;
+  }
+
+  .login-form-fields {
+    background-color: aqua;
+    width: 100%;
+  }
+  .login-form-fields-wrapper .title {
+    margin: 18rem 0 0 0;
+  }
+}
+@media screen and (max-width: 840px) {
+  .login-form-content {
+    flex-direction: row;
+  }
+  .login-form-welcome-message {
+    width: 100%;
+  }
+
+  .login-form-fields {
+    background-color: aqua;
+    width: 100%;
+  }
+
+  .login-form-fields-wrapper .title {
+    margin: 12rem 0 0 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  .login-form-container {
+    margin: 1rem;
+  }
+  .login-form-content {
+    flex-direction: column;
+  }
+  .login-form-welcome-message-wrapper {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 0;
+  }
+  .login-form-fields-wrapper .title {
+    margin: 1rem 0 0 0;
+  }
+  .login-form-fields-wrapper {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+  .login-form-welcome-message-wrapper .description {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .login-form-container {
+    margin: 1rem;
+  }
+  .login-form-content {
+    flex-direction: column;
+  }
+  .login-form-welcome-message-wrapper {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 0;
+  }
+  .login-form-fields-wrapper .title {
+    margin: 1rem 0 0 0;
+  }
+  .login-form-fields-wrapper {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+  .login-form-welcome-message-wrapper .description {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+}
+@media screen and (max-width: 360px) {
+}
+@media screen and (max-width: 320px) {
+}

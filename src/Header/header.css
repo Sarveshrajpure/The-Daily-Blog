@@ -1,0 +1,113 @@
+.header {
+  background-color: #ffff;
+  padding: 1rem 5rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px;
+}
+.header-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.user-dp {
+  width: 20%;
+}
+.user-name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.name-display {
+  cursor: pointer;
+}
+.fa-user {
+  font-size: 1rem;
+  padding: 0 1rem 0 0;
+  cursor: pointer;
+}
+.dropDown {
+  position: absolute;
+  top: 8%;
+  left: 83%;
+  background-color: #ffff;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px;
+}
+.dropDown-icon {
+  font-size: 1rem;
+  margin: 0 0 0 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.dropDownOption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  transition: background-color 250ms ease-in;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.dropDownOption:hover {
+  background-color: #eec643;
+}
+@media screen and (max-width: 1370px) {
+  .header {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dropDown {
+    top: 5%;
+    left: 82%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .dropDown {
+    top: 5.5%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .dropDown {
+    top: 6%;
+    left: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dropDown {
+    top: 7%;
+    left: 72%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+  .user-dp {
+    width: 30%;
+  }
+  .dropDown {
+    top: 8%;
+    left: 65%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .dropDown {
+    top: 8.5%;
+    left: 65%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .dropDown {
+    top: 10%;
+    left: 65%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 1rem 1rem 1rem 0.5rem;
+  }
+}
